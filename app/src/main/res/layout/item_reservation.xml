@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_reservation.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fb_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/info"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:contentDescription="Icon"/>
+        <!-- Title and Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fb_icon"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+        <TextView
+        android:id="@+id/textViewDateDebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Debut: "
+
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewDateFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Fin: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+        </LinearLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/item_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/fb_icon_close"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:contentDescription="Close Icon"/>
+
+            <ImageView
+                android:id="@+id/item_update"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/edit_note_24"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:contentDescription="Close Icon"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

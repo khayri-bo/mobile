@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reservation.ReservationHomeActivity"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/gestion"
+        tools:ignore="ContentDescription" />
+
+    <!-- Add other UI elements as needed -->
+
+
+    <Button
+        android:id="@+id/reservationButton"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Add a Reservation"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/viewReservation"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/reservationButton"
+        android:text="List Reservations"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/backpage"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/viewReservation"
+        android:text="Back"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
+
+
