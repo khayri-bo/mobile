@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".reclamerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:background="#D8D8D8"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:shadowColor="#3F51B5"
+            android:text="Reclamation"
+            android:textColor="#313F8F"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+             />
+        <EditText
+            android:id="@+id/EditTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter your username"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:padding="5dp" />
+
+
+        <EditText
+            android:id="@+id/EditTextFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter your reclamation"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="#3545A3"
+            android:backgroundTint="#3F51B5"
+            android:text="Send Reclamation"
+            android:textColor="#FAF7F7" />
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="#3545A3"
+            android:backgroundTint="#3F51B5"
+            android:text="Cancel"
+            android:textColor="#FAF7F7" />
+
+    </LinearLayout>
+</FrameLayout>
